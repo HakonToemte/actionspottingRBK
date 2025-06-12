@@ -1,0 +1,32 @@
+{
+    "frame_dir": "ballactionframes448",
+    "save_dir": "checkpoints/SoccerNetBall_ballRBK",
+    "store_mode": "load",
+    "batch_size": 8,
+    "clip_len": 100,
+    "crop_dim": -1,
+    "dataset": "ballRelatedRBK",
+    "event_team": true,
+    "radi_displacement": 4,
+    "epoch_num_frames": 500000,
+    "feature_arch": "rny002_gsf",
+    "learning_rate": 0.0008,
+    "mixup": true,
+    "modality": "rgb",
+    "num_classes": 8,
+    "num_epochs": 35,
+    "warm_up_epochs": 3,
+    "start_val_epoch": 15,
+    "temporal_arch": "ed_sgp_mixer",
+    "n_layers": 2,
+    "sgp_ks": 9,
+    "sgp_r": 4,
+    "only_test": false,
+    "criterion": "map",
+    "num_workers": 8,
+    "joint_train": {
+        "frame_dir": "actionframes448",
+        "dataset": "soccernet",
+        "num_classes": 17
+    }
+}
